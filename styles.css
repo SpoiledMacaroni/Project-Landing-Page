@@ -21,7 +21,14 @@ body {
     width: 900px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
 
 .links {
     /* border: 1px solid #fff; For debugging */
@@ -47,6 +54,23 @@ body {
     align-items: center;
   }
 
+.hero button {
+    margin: 8px 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 4px;
+}
+
+.hero-subtext,
+.links {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 img {
     max-height: 30vh;
     flex: 1;
@@ -59,12 +83,20 @@ img {
     align-items: center;
 }
 
+.information-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin: 5vh;
+}
+
 .content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 5vh;
 }
 
 .item img {
@@ -95,6 +127,7 @@ img {
     font-size: 36px;
     font-weight: 200;
     width: 800px;
+    margin-top: 5vh;
 }
 
 .signed {
@@ -102,6 +135,7 @@ img {
     align-self: end;
     font-weight: 600;
     width: 800px;
+    margin-bottom: 5vh;
 }
 
 .cta-container{
@@ -113,7 +147,7 @@ img {
     color: #F9FAF8;
     border: none;
     padding: 2vh 8vh;
-    margin: 8vh 8vh;
+    margin: 5vh;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -125,10 +159,16 @@ img {
     font-weight: bold;
 }
 
-button {
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.su-btn {
     background-color: #3882F6;
     color: #F9FAF8;
     border: none;
+    display: inline-block;
     padding: 8px 16px;
     text-align: center;
     font-weight: 800;
